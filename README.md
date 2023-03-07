@@ -35,7 +35,13 @@ node producer.js prq
 node consumer.js (we can run 2 consumer based upon use case)
 ```
 
+Use:
+1. This can help us create a standby machine which can act when the main machine fails.
+ex. In a database server, the data will be replicated across multiple database servers. But, what if main server(master node) fails? Here we can create a replica server where the metadata will be subscibed and hence a copy will be maintained.
+
+
 Ref:
 
 1. https://www.youtube.com/watch?v=R873BlNVUB4 - pros and cons refer from 1:03
 2. https://www.tutorialspoint.com/apache_kafka/apache_kafka_introduction.htm
+
